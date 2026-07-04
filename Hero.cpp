@@ -39,6 +39,17 @@ void Hero::Update(float deltaSeconds, PlayerState& playerState, WorldState& worl
 	if (worldState.IsWalkableTile(newPosition))
 	{
 		playerState.PlayerPosition = newPosition;
+		
+		// ---- //
+		if (playerState.WantsToGoUP) {
+			//this->LoadTexture(SDL_Renderer* pRenderer, "Assets/plrSpriteWalkDown.bmp" );
+		}
+		else
+		{
+
+		}
+
+		// ---- //
 	}
 
 	worldState.CameraPosition = playerState.PlayerPosition;
