@@ -1,8 +1,8 @@
 # 2D Dungeon Project -- C Practice
 
 ### About
-I made this to practice C-Programming before a Uni class I'll have soon.
-Here, I'll update a base project I made two years ago, documenting it along the way.
+I made this to practice C-Programming before a Uni class on it I'll have soon.
+Here, I'll update [a base project I made two years ago](https://github.com/Logan-Martin/2DDungeonProject_Game140), documenting it along the way.
 
 ### Updates
 
