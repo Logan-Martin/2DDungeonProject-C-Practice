@@ -6,6 +6,10 @@ Here, I'll update [a base project I made two years ago](https://github.com/Logan
 
 ### Updates
 
+7/10/2026:
+Added turning the Hero based on movement. 
+- This is done through a new method on Sprite class, meaning all sprites can be updated. :D
+
 7/4/2026: 
 Created project, dealt with Git issues, & added sprinting mechanic.
 Note: Project's SDL2 dependency is added by NuGet instead of having the SDL2 library locally.
