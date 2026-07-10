@@ -71,6 +71,7 @@ namespace DungeonGame
 
 		Hero* newHero = new Hero;
 		newHero->Initialize(pRenderer, "Assets/plrSpriteWalkDown.bmp");
+
 		newHero->Size = Vector2d(128.0f, 128.0f);
 		playerState.PlayerPosition = Vector2d(4.0f * worldState.TileSizeInPixels.X, 3.0f * worldState.TileSizeInPixels.Y);
 		//newHero->Position = Vector2d(4.0f * worldState.TileSizeInPixels.X , 3.0f * worldState.TileSizeInPixels.Y );

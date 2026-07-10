@@ -42,13 +42,20 @@ void Hero::Update(float deltaSeconds, PlayerState& playerState, WorldState& worl
 		
 		// ---- //
 		if (playerState.WantsToGoUP) {
-			//this->LoadTexture(SDL_Renderer* pRenderer, "Assets/plrSpriteWalkDown.bmp" );
+			this->UpdateTextureOfSprite(this->pRenderer_REF, "Assets/plrSpriteWalkUp.bmp");
+		}
+		else if (playerState.WantsToGoLeft) {
+			this->UpdateTextureOfSprite(this->pRenderer_REF, "Assets/plrSpriteWalkLeft.bmp");
+		}
+		else if (playerState.WantsToGoRight)
+		{
+			this->UpdateTextureOfSprite(this->pRenderer_REF, "Assets/plrSpriteWalkRight.bmp");
 		}
 		else
 		{
-
+			this->UpdateTextureOfSprite(this->pRenderer_REF, "Assets/plrSpriteWalkDown.bmp");
 		}
-
+		
 		// ---- //
 	}
 
