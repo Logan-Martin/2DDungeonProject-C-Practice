@@ -14,6 +14,8 @@ namespace DungeonGame
 		virtual void Initialize(SDL_Renderer* pRenderer, const std::string& imageFilepath);
 		virtual void Update(float deltaSeconds, PlayerState& playerState, WorldState& worldState);
 		virtual void Render(SDL_Renderer* pRenderer, const PlayerState& playerState, const WorldState& worldState, const Vector2d& baseTranslation );
+		virtual void UpdateTextureOfSprite(SDL_Renderer* pRenderer, const std::string& imageFilepath);
+
 		virtual void CleanUp();
 
 		static void CleanUpTextures();
@@ -25,6 +27,7 @@ namespace DungeonGame
 
 	protected:
 		SDL_Texture* MyTexture;
+		SDL_Renderer* pRenderer_REF; // Not a copy, a refrence pointer. I think.
 
 		static SDL_Texture* LoadTexture(SDL_Renderer* pRenderer, const std::string& imageFilepath);
 

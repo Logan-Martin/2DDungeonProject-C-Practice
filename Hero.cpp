@@ -39,6 +39,24 @@ void Hero::Update(float deltaSeconds, PlayerState& playerState, WorldState& worl
 	if (worldState.IsWalkableTile(newPosition))
 	{
 		playerState.PlayerPosition = newPosition;
+		
+		// ---- //
+		if (playerState.WantsToGoUP) {
+			this->UpdateTextureOfSprite(this->pRenderer_REF, "Assets/plrSpriteWalkUp.bmp");
+		}
+		else if (playerState.WantsToGoLeft) {
+			this->UpdateTextureOfSprite(this->pRenderer_REF, "Assets/plrSpriteWalkLeft.bmp");
+		}
+		else if (playerState.WantsToGoRight)
+		{
+			this->UpdateTextureOfSprite(this->pRenderer_REF, "Assets/plrSpriteWalkRight.bmp");
+		}
+		else
+		{
+			this->UpdateTextureOfSprite(this->pRenderer_REF, "Assets/plrSpriteWalkDown.bmp");
+		}
+		
+		// ---- //
 	}
 
 	worldState.CameraPosition = playerState.PlayerPosition;
