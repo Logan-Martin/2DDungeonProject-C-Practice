@@ -26,6 +26,7 @@ namespace DungeonGame
 		{
 		}
 
+		// Note: Below are conditional operator cases:
 		bool operator==(const Vector2d& otherPosition) const
 		{
 			return X == otherPosition.X && Y == otherPosition.Y;
